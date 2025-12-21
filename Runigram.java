@@ -175,9 +175,9 @@ public class Runigram {
 		int gc2 = c2.getGreen();
 		int bc2 = c2.getBlue();
 
-		int rb = (int)Math.round((alpha * (double)(rc1)) + (1-alpha) * (double)(rc2));
-		int gb = (int)Math.round((alpha * (double)(gc1)) + (1-alpha) * (double)(gc2));
-		int bb = (int)Math.round((alpha * (double)(bc1)) + (1-alpha) * (double)(bc2));
+		int rb = (int)((alpha * (double)(rc1)) + (1-alpha) * (double)(rc2));
+		int gb = (int)((alpha * (double)(gc1)) + (1-alpha) * (double)(gc2));
+		int bb = (int)((alpha * (double)(bc1)) + (1-alpha) * (double)(bc2));
 
 
 		return new Color(rb, gb, bb);
